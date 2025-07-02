@@ -40,7 +40,7 @@ const Navbar = () => {
           <button className="transition-all duration-300" onClick={toggleTheme}>
             {theme === "light" ? <Moon /> : <Sun />}
           </button>
-          <button className="bg-mainBlue text-mainBlack dark:text-mainWhite font-semibold font-electrolize p-2 rounded-full">
+          <button className="bg-mainBlue text-mainBlack dark:text-mainWhite cursor-pointer font-semibold font-electrolize p-2 rounded-full">
             Events
           </button>
         </div>

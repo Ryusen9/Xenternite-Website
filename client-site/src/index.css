@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@font-face {
+  font-family: "Quicksand";
+  src: url("/public/Fonts/Quicksand-Regular.woff") format("woff");
+}
 @import "tailwindcss";
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
@@ -12,4 +16,5 @@
   /* Fonts */
   --font-electrolize: "Electrolize", "sans-serif";
   --font-zenDots: "Zen Dots", "sans-serif";
+  --font-quicksand: "Quicksand", "sans-serif";
 }

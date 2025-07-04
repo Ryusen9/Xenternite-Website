@@ -1,4 +1,6 @@
 import React from "react";
+import Carousel from "../Shared/Carousel";
+import ProfileCard from "../Profile Card/ProfileCard";
 
 const ManagementSection = () => {
   return (
@@ -11,7 +13,10 @@ const ManagementSection = () => {
         Xenternite. They work tirelessly behind the scenes to make sure
         everything runs smoothly.
       </p>
-      <div className="mt-3"></div>
+      <div className="mt-3 flex items-center justify-center">
+        <Carousel />
+        <ProfileCard />
+      </div>
     </div>
   );
 };

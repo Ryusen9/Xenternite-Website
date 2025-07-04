@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import Hero from "../Components/Hero/Hero";
 import MarqueeElement from "../Components/Marquee/MarqueeElement";
+import ManagementSection from "../Components/Maagement Section/ManagementSection";
 
 const HomeLayout = () => {
   return (
@@ -15,6 +16,9 @@ const HomeLayout = () => {
         </div>
         <div>
           <MarqueeElement />
+        </div>
+        <div>
+          <ManagementSection />
         </div>
       </div>
     </>

@@ -1,8 +1,8 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import xenLogo from "../../../public/assets/XEN_logo.png";
-import techDiversityLogo from "../../../public/assets/tech-diversity-ltd-site-logo.png";
-import robiLogo from '../../../public/assets/514faa6491556197fe849822b794f881.png';
+import techDiversityLogo from "../../../public/assets/TD-google-logo.png";
+import robiLogo from "../../../public/assets/514faa6491556197fe849822b794f881.png";
 
 const MarqueeElement = () => {
   const sponsors = [xenLogo, techDiversityLogo, robiLogo];
@@ -10,14 +10,14 @@ const MarqueeElement = () => {
   return (
     <div className="w-full relative">
       {/* Left overlay */}
-      <div className="absolute top-0 left-0 w-[20%] h-full bg-gradient-to-r from-white dark:from-black to-transparent z-2"></div>
+      <div className="absolute top-0 left-0 w-[13%] md:w-[20%] h-full bg-gradient-to-r from-white dark:from-black to-transparent z-2"></div>
       {/* Right overlay */}
-      <div className="absolute top-0 right-0 w-[20%] h-full bg-gradient-to-l from-white dark:from-black to-transparent z-2"></div>
+      <div className="absolute top-0 right-0 w-[13%] md:w-[20%] h-full bg-gradient-to-l from-white dark:from-black to-transparent z-2"></div>
       {/* Marquee Title */}
-      <p className="pt-5 uppercase text-center font-zenDots font-semibold text-5xl">
+      <p className="pt-5 uppercase text-center font-zenDots font-semibold text-3xl md:text-5xl">
         SPONSORS
       </p>
-      <p className="text-center text-base w-full font-quicksand ">
+      <p className="text-center text-xs md:text-base w-[70%] mx-auto font-quicksand ">
         Our sponsors make it possible for us to host events and provide
         resources for the community. We are grateful for their support!
       </p>
@@ -29,7 +29,9 @@ const MarqueeElement = () => {
               key={index}
               src={sponsor}
               alt={`Sponsor ${index}`}
-              className={`w-[100px] h-[100px] object-contain mx-4 ${indexes.includes(index) ? "dark:invert" : ''}`}
+              className={`w-[50px] h-[50px] md:w-[100px] md:h-[100px] object-contain mx-4 ${
+                indexes.includes(index) ? "dark:invert" : ""
+              }`}
             />
           ))}
         </Marquee>

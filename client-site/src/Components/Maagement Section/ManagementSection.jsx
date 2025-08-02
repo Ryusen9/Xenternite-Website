@@ -1,6 +1,5 @@
 import React from "react";
-import ProfileCard from "../Profile Card/ProfileCard";
-import Carousal from "../Carousal/Carousal";
+import ManagementCarousel from "./ManagementCarousel";
 
 const ManagementSection = () => {
   return (
@@ -14,7 +13,7 @@ const ManagementSection = () => {
         everything runs smoothly.
       </p>
       <div className="mt-3 flex items-center justify-center">
-        <Carousal />
+        <ManagementCarousel />
       </div>
     </div>
   );
